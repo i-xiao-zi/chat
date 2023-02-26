@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/home/detail",
+    "pages/chat/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "iconfontSrc": "/static/fonts/MaterialIcons-Regular.ttf",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "/static/icons/connect.png",
+        "selectedIconPath": "/static/icons/connect_selected.png",
+        "text": "home"
+      },
+      {
+        "pagePath": "pages/chat/index",
+        "iconPath": "/static/icons/connect.png",
+        "selectedIconPath": "/static/icons/connect_selected.png",
+        "text": "chat"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
