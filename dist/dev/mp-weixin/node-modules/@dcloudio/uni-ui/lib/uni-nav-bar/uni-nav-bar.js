@@ -106,8 +106,8 @@ const _sfc_main = {
     }
   },
   mounted() {
-    if (common_vendor.index.report && this.stat && this.title !== "") {
-      common_vendor.index.report("title", this.title);
+    if (common_vendor.index$1.report && this.stat && this.title !== "") {
+      common_vendor.index$1.report("title", this.title);
     }
   },
   methods: {

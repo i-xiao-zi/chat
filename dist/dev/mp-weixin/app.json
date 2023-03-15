@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/index",
     "pages/home/detail",
-    "pages/chat/index"
+    "pages/home/setting",
+    "pages/user/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -15,7 +16,6 @@
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
-    "iconfontSrc": "/static/fonts/MaterialIcons-Regular.ttf",
     "list": [
       {
         "pagePath": "pages/home/index",
@@ -24,10 +24,10 @@
         "text": "home"
       },
       {
-        "pagePath": "pages/chat/index",
+        "pagePath": "pages/user/index",
         "iconPath": "/static/icons/connect.png",
         "selectedIconPath": "/static/icons/connect_selected.png",
-        "text": "chat"
+        "text": "user"
       }
     ]
   },

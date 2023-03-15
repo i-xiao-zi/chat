@@ -1,40 +1,54 @@
 <template>
   <view>
-	  <uni-nav-bar leftIcon="left" title="聊天xxx" statusBar="true" />
-	  <uni-card isFull border="0" :isShadow="false">
-		  xxx
-	  </uni-card>
-	  <uni-card isFull border="0" :isShadow="false">
-		  xxx
-	  </uni-card>
-	  <uni-card isFull border="0" :isShadow="false">
-		  xxx
-	  </uni-card>
+	  <uni-nav-bar
+      leftWidth="180rpx"
+      rightWidth="180rpx"
+      title="设置" 
+      statusBar
+      fixed>
+      <template #left>
+        <view class="flex justify-between self-center border-1px rounded-full border-gray-200 border-solid p-5rpx">
+            <uni-icons class="mx-14rpx self-center" size="22" type="back" @click="navBack" />
+            <view class="self-center w-2rpx h-30rpx bg-gray-200" />
+            <uni-icons class="mx-14rpx self-center" size="22" type="gear" @click="navSetting" />
+        </view>
+      </template>
+    </uni-nav-bar>
+	  <view class='bg-gray-200 -my-44px h-screen'>
+        
+        <ChatItem :self="false" content="hello world" />
+        <ChatItem :self="true" content="hello world"  />
+        <ChatItem :self="false" content="hello world" />
+        <ChatItem :self="true" content="hello world"  />
+        <ChatItem :self="false" content="hello world" />
+        <ChatItem :self="true" content="hello world"  />
+        <ChatItem :self="false" content="hello world" />
+        <ChatItem :self="true" content="hello world"  />
+    </view>
+    <view class="w-full bg-gray-100 fixed bottom-0">
+      <view class="flex">
+        <uni-icons type="sound" size="40"></uni-icons>
+        <uni-easyinput 
+          class="flex-auto" 
+          trim="all" 
+          model="value" 
+          placeholder="请输入内容"
+          confirmType="send"
+          @input="input" />
+      </view>
+      <view style="height:env(safe-area-inset-bottom)"></view>
+    </view>
+
   </view>
 </template>
 
 <script lang="ts" setup>
-	import { Configuration, OpenAIApi } from 'openai'
-  var FormData = require('form-data');
-  console.log(FormData)
-	const configuration = new Configuration({
-	  apiKey: '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',
-	  baseOptions: {
-		  headers: {
-			  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'
-		  }
-	  },
-    // formDataCtor: FormData
-	});
-	console.log(configuration)
-	// const openai = new OpenAIApi(configuration);
-	
-	// const completion = await openai.createCompletion({
-	//   model: "text-davinci-003",
-	//   prompt: "Hello world",
-	// });
-	// console.log(completion.data.choices[0].text);
-
+  import ChatItem from './components/chat_item.vue'
+  
+  const navBack = () => uni.navigateBack()
+  const navSetting = () => uni.navigateTo({
+    url: '/pages/home/setting'
+  })
 </script>
 
 <style lang="scss" scoped>

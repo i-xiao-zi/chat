@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-nav-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-nav-bar",
+    "uni-easyinput": "../../node-modules/@dcloudio/uni-ui/lib/uni-easyinput/uni-easyinput",
+    "uni-list-item": "../../node-modules/@dcloudio/uni-ui/lib/uni-list-item/uni-list-item",
+    "uni-list": "../../node-modules/@dcloudio/uni-ui/lib/uni-list/uni-list",
+    "uni-data-picker": "../../node-modules/@dcloudio/uni-ui/lib/uni-data-picker/uni-data-picker"
+  }
+}

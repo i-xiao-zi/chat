@@ -8,7 +8,7 @@ const _sfc_main = {
     };
   },
   mounted() {
-    this.statusBarHeight = common_vendor.index.getSystemInfoSync().statusBarHeight + "px";
+    this.statusBarHeight = common_vendor.index$1.getSystemInfoSync().statusBarHeight + "px";
   }
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {

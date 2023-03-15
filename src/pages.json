@@ -19,7 +19,13 @@
       }
     },
     {
-      "path": "pages/chat/index",
+      "path": "pages/home/setting",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/index",
       "style": {
         "navigationStyle": "custom"
       }
@@ -40,7 +46,6 @@
     "fontSize": "10px",
     "iconWidth": "24px",
     "spacing": "3px",
-    "iconfontSrc":"/static/fonts/MaterialIcons-Regular.ttf",
     "list": [
       {
          "pagePath": "pages/home/index",
@@ -49,10 +54,10 @@
          "text": "home"
       },
       {
-         "pagePath": "pages/chat/index",
+         "pagePath": "pages/user/index",
          "iconPath": "/static/icons/connect.png",
          "selectedIconPath": "/static/icons/connect_selected.png",
-         "text": "chat"
+         "text": "user"
       }
     ]
   }

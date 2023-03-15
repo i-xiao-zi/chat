@@ -2,7 +2,6 @@
   "name": "chat",
   "version": "0.0.1",
   "license": "MIT",
-  "private": "true",
   "scripts": {
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
@@ -48,6 +47,7 @@
     "windicss": "^3.5.6"
   },
   "devDependencies": {
+    "@dcasia/mini-program-tailwind-webpack-plugin": "^1.5.6",
     "@dcloudio/types": "^3.0.17",
     "@dcloudio/uni-automator": "3.0.0-alpha-3061720230111001",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-3061720230111001",
@@ -62,8 +62,5 @@
     "sass-loader": "^13.2.0",
     "typescript": "^4.8.4",
     "vite": "3.2.4"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  }
 }

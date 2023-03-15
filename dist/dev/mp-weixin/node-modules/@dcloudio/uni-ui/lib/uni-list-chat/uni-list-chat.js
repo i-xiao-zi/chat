@@ -162,19 +162,19 @@ const _sfc_main = {
       };
       switch (api) {
         case "navigateTo":
-          common_vendor.index.navigateTo(callback);
+          common_vendor.index$1.navigateTo(callback);
           break;
         case "redirectTo":
-          common_vendor.index.redirectTo(callback);
+          common_vendor.index$1.redirectTo(callback);
           break;
         case "reLaunch":
-          common_vendor.index.reLaunch(callback);
+          common_vendor.index$1.reLaunch(callback);
           break;
         case "switchTab":
-          common_vendor.index.switchTab(callback);
+          common_vendor.index$1.switchTab(callback);
           break;
         default:
-          common_vendor.index.navigateTo(callback);
+          common_vendor.index$1.navigateTo(callback);
       }
     }
   }

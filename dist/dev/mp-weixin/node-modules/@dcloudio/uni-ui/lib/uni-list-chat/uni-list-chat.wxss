@@ -24,7 +24,7 @@
 /* 透明度 */
 /* 文章场景相关 */
 .uni-list-chat {
-  font-size: 16px;
+  font-size: 32rpx;
   position: relative;
   flex-direction: column;
   justify-content: space-between;
@@ -35,23 +35,23 @@
 }
 .uni-list--border {
   position: relative;
-  margin-left: 15px;
+  margin-left: 30rpx;
 }
 .uni-list--border:after {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  height: 1px;
+  height: 2rpx;
   content: "";
   transform: scaleY(0.5);
   background-color: #e5e5e5;
 }
 .uni-list-item--first:after {
-  height: 0px;
+  height: 0rpx;
 }
 .uni-list-chat--first {
-  border-top-width: 0px;
+  border-top-width: 0rpx;
 }
 .uni-ellipsis {
   overflow: hidden;
@@ -70,7 +70,7 @@
   display: flex;
   flex-direction: row;
   flex: 1;
-  padding: 10px 15px;
+  padding: 20rpx 30rpx;
   position: relative;
   overflow: hidden;
 }
@@ -84,26 +84,26 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
-  width: 45px;
-  height: 45px;
-  border-radius: 5px;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 10rpx;
   border-color: #eee;
-  border-width: 1px;
+  border-width: 2rpx;
   border-style: solid;
   overflow: hidden;
 }
 .uni-list-chat__header-box {
   box-sizing: border-box;
   display: flex;
-  width: 45px;
-  height: 45px;
+  width: 90rpx;
+  height: 90rpx;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 4rpx;
 }
 .uni-list-chat__header-image {
-  margin: 1px;
-  width: 45px;
-  height: 45px;
+  margin: 2rpx;
+  width: 90rpx;
+  height: 90rpx;
 }
 .uni-list-chat__header-image {
   display: block;
@@ -130,33 +130,33 @@
   flex-direction: row;
   flex: 1;
   overflow: hidden;
-  padding: 2px 0;
+  padding: 4rpx 0;
 }
 .uni-list-chat__content-main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 10px;
+  padding-left: 20rpx;
   flex: 1;
   overflow: hidden;
 }
 .uni-list-chat__content-title {
-  font-size: 16px;
+  font-size: 32rpx;
   color: #3b4144;
   font-weight: normal;
   overflow: hidden;
 }
 .draft, .uni-list-chat__content-note {
-  margin-top: 3px;
+  margin-top: 6rpx;
   color: #999;
-  font-size: 12px;
+  font-size: 24rpx;
   font-weight: normal;
   overflow: hidden;
 }
 .draft {
   color: #eb3a41;
   flex-shrink: 0;
-  padding-right: 3px;
+  padding-right: 6rpx;
 }
 .uni-list-chat__content-extra {
   flex-shrink: 0;
@@ -164,42 +164,42 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  margin-left: 5px;
+  margin-left: 10rpx;
 }
 .uni-list-chat__content-extra-text {
   color: #999;
-  font-size: 12px;
+  font-size: 24rpx;
   font-weight: normal;
   overflow: hidden;
 }
 .uni-list-chat__badge-pos {
   position: absolute;
-  left: calc(45px + 10px - 6px + 0px);
-  top: calc(10px/ 2 + 1px + 0px);
+  left: calc(90rpx + 20rpx - 12rpx + 0rpx);
+  top: calc(20rpx/ 2 + 2rpx + 0rpx);
 }
 .uni-list-chat__badge {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
+  border-radius: 200rpx;
   background-color: #ff5a5f;
 }
 .uni-list-chat__badge-text {
   color: #fff;
-  font-size: 12px;
+  font-size: 24rpx;
 }
 .uni-badge--single {
-  width: 18px;
-  height: 18px;
+  width: 36rpx;
+  height: 36rpx;
 }
 .uni-badge--complex {
   width: auto;
-  height: 18px;
-  padding: 0 6px;
+  height: 36rpx;
+  padding: 0 12rpx;
 }
 .uni-badge--dot {
-  left: calc(45px + 15px - 10px/ 2 + 1px + 0px);
-  width: 10px;
-  height: 10px;
+  left: calc(90rpx + 30rpx - 20rpx/ 2 + 2rpx + 0rpx);
+  width: 20rpx;
+  height: 20rpx;
   padding: 0;
 }
