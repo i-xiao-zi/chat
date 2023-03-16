@@ -49,14 +49,14 @@
     "list": [
       {
          "pagePath": "pages/home/index",
-         "iconPath": "/static/icons/connect.png",
-         "selectedIconPath": "/static/icons/connect_selected.png",
+         "iconPath": "/static/icons/home.png",
+         "selectedIconPath": "/static/icons/home_selected.png",
          "text": "home"
       },
       {
          "pagePath": "pages/user/index",
-         "iconPath": "/static/icons/connect.png",
-         "selectedIconPath": "/static/icons/connect_selected.png",
+         "iconPath": "/static/icons/user.png",
+         "selectedIconPath": "/static/icons/user_selected.png",
          "text": "user"
       }
     ]

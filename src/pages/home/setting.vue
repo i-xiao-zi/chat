@@ -1,33 +1,47 @@
 <template>
   <view class="bg-gray-100">
-	  <uni-nav-bar 
-      leftIcon="left" 
+	<uni-nav-bar
+      leftWidth="180rpx"
+      rightWidth="180rpx"
       title="设置" 
-      statusBar="true"
-      @clickLeft="navBack"
-      fixed />
+      statusBar
+      fixed>
+      <template #left>
+        <view class="flex justify-between self-center border-1px rounded-full border-gray-200 border-solid p-5rpx">
+            <uni-icons class="mx-14rpx self-center" size="22" type="back" @click="navBack" />
+            <view class="self-center w-2rpx h-30rpx bg-gray-200" />
+            <uni-icons class="mx-14rpx self-center" size="22" type="checkbox" @click="navSetting" />
+        </view>
+      </template>
+    </uni-nav-bar>
     <uni-list class="my-5px">
       <uni-list-item 
         title="标题"
-        link="reLaunch" 
-        to="/pages/vue/index/index" 
-        @click="onClick($event,1)">
+		:showArrow="false"
+        click="">
         <template #footer>
-          <uni-easyinput errorMessage v-model="value" focus placeholder="请输入内容" @input="input"/>
+          <uni-easyinput 
+			class="-my-18rpx"
+			v-model="value"
+			:inputBorder="false"
+			:styles="{borderColor: 'transparent',marginTop: '-10rpx'}"
+			placeholder="请输入内容"
+			@input="input"
+			errorMessage
+			focus/>
         </template>
       </uni-list-item>
     </uni-list>
     <uni-list class="my-5px">
       <uni-list-item 
-        thumb="https://web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png"
         title="模型" 
-        link="reLaunch" 
-        to="/pages/vue/index/index" 
+		:showArrow="false"
         @click="onClick($event,1)">
         <template #footer>
           <uni-data-picker 
-            class="border-0"
-            placeholder="请选择班级" 
+			class="-my-18rpx"
+			:border="false"
+            placeholder="请选择模型" 
             popup-title="请选择所在地区" 
             :localdata="dataTree" 
             :clear-icon="false"
@@ -39,27 +53,48 @@
         </template>
       </uni-list-item>
       <uni-list-item 
-        thumb="https://web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png"
-        title="Temperature" 
-        link="reLaunch" 
+        title="温度" 
         to="/pages/vue/index/index" 
-        @click="onClick($event,1)" />
+        @click="onClick($event,1)">
+        <template #footer>
+			<uni-number-box
+			class="-my-7rpx" :value="1" max="100" min="0" :step="1" />
+        </template>
+      </uni-list-item>
       <uni-list-item 
-        thumb="https://web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png"
-        title="Maximum length" 
-        link="reLaunch" 
+        title="长度" 
         to="/pages/vue/index/index" 
-        @click="onClick($event,1)" />
+        @click="onClick($event,1)">
+        <template #footer>
+			<uni-number-box :value="1" max="100" min="0" :step="1" />
+        </template>
+      </uni-list-item>
       <uni-list-item 
-        thumb="https://web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png"
-        title="reLaunch 方式跳转页面" 
-        link="reLaunch" 
+        title="Top P" 
         to="/pages/vue/index/index" 
-        @click="onClick($event,1)" />
+        @click="onClick($event,1)" >
+        <template #footer>
+			<uni-number-box :value="1" max="100" min="0" :step="1" />
+        </template>
+      </uni-list-item>
       <uni-list-item 
-        thumb="https://web-assets.dcloud.net.cn/unidoc/zh/unicloudlogo.png"
-        title="reLaunch 方式跳转页面" 
-        link="reLaunch" 
+        title="Frequency penalty" 
+        to="/pages/vue/index/index" 
+        @click="onClick($event,1)" >
+        <template #footer>
+			<uni-number-box :value="1" max="100" min="0" :step="1" />
+        </template>
+      </uni-list-item>
+      <uni-list-item 
+        title="Presence penalty" 
+        to="/pages/vue/index/index" 
+        @click="onClick($event,1)" >
+        <template #footer>
+			<uni-number-box :value="1" max="100" min="0" :step="1" />
+        </template>
+      </uni-list-item>
+      <uni-list-item 
+        title="Best of" 
         to="/pages/vue/index/index" 
         @click="onClick($event,1)" />
     </uni-list>

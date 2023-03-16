@@ -1,6 +1,6 @@
 <template>
   <view>
-	  <uni-nav-bar
+	<uni-nav-bar
       leftWidth="180rpx"
       rightWidth="180rpx"
       title="设置" 

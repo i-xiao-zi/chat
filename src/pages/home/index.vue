@@ -28,6 +28,7 @@
   const navAdd = () => uni.navigateTo({
     url: '/pages/home/setting'
   })
+  
 </script>
 
 <style lang="scss" scoped>
