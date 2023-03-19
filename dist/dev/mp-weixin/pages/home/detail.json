@@ -1,9 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "uni-icons": "../../node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons",
-    "uni-nav-bar": "../../node-modules/@dcloudio/uni-ui/lib/uni-nav-bar/uni-nav-bar",
-    "uni-easyinput": "../../node-modules/@dcloudio/uni-ui/lib/uni-easyinput/uni-easyinput",
-    "chat-item": "./components/chat_item"
-  }
-}
