@@ -37,6 +37,10 @@
 .rounded-full {
   border-radius: 19998rpx;
 }
+.rounded-t-10rpx {
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+}
 .border-solid {
   border-style: solid;
 }

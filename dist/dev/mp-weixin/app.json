@@ -3,7 +3,8 @@
     "pages/home/index",
     "pages/home/detail",
     "pages/home/setting",
-    "pages/user/index"
+    "pages/user/index",
+    "pages/user/auth"
   ],
   "window": {
     "navigationBarTextStyle": "black",

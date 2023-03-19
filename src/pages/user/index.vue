@@ -1,6 +1,7 @@
 <template>
   <view>
     <view class="flex px-10px py-20px pt-80px" style="background: url('/static/images/bg.jpg') no-repeat;">
+		<button @click="goto('/pages/user/auth')">getUserProfile</button>
       <image
         class="w-40px h-40px rounded-full mx-5px"
         mode="aspectFit" 
@@ -43,7 +44,7 @@
 </template>
 
 <script lang="ts" setup>
-
+import { goto } from '../../utils/router';
 </script>
 
 <style lang="scss" scoped>

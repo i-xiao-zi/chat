@@ -1,6 +1,6 @@
 <template>
   <view>
-	  <uni-nav-bar
+	<uni-nav-bar
       leftIcon="plus"
       title="设置" 
       statusBar

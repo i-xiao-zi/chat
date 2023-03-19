@@ -7338,6 +7338,12 @@ const pages = [
     style: {
       navigationStyle: "custom"
     }
+  },
+  {
+    path: "pages/user/auth",
+    style: {
+      navigationStyle: "custom"
+    }
   }
 ];
 const globalStyle = {
@@ -11520,3 +11526,4 @@ exports.resolveComponent = resolveComponent;
 exports.s = s$1;
 exports.sr = sr;
 exports.t = t$1;
+exports.unref = unref;

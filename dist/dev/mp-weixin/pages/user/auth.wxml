@@ -1,0 +1,1 @@
+<view><uni-nav-bar wx:if="{{b}}" bindclickLeft="{{a}}" u-i="6eea5ac5-0" bind:__l="__l" u-p="{{b}}"></uni-nav-bar><view class="fixed bottom-0"><view class=""><view class="rounded-t-10rpx bg-gray-100"><view class=""></view><button open-type="getPhoneNumber" bindgetphonenumber="{{c}}">一键登录</button></view></view></view></view>
