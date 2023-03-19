@@ -23,7 +23,6 @@
 </template>
 
 <script lang="ts" setup>
-  import {ref} from 'vue'
   import { Message } from '../../types/ws'
   import { WS } from '../../utils/ws'
   import '../../utils/ws.ts'
