@@ -24,9 +24,14 @@
 
 <script lang="ts" setup>
   import {ref} from 'vue'
+  import { Message } from '../../types/ws'
+  import { WS } from '../../utils/ws'
   import '../../utils/ws.ts'
   const navAdd = () => uni.navigateTo({
     url: '/pages/home/setting'
+  })
+  WS.getInstance().receive('/text', (message: Message) => {
+    console.log('xxxxxxxxxxxxxxxxxxx', message)
   })
   
 </script>
